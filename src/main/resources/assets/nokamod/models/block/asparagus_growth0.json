@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "nokamod:blocks/asparagus_growth0"
+  }
+}

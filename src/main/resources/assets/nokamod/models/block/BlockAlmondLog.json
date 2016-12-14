@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "nokamod:blocks/log_cherry_top",
+        "side": "nokamod:blocks/log_cherry"
+    }
+}

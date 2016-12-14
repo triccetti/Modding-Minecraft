@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "nokamod:zucchini_growth0" },
+        "age=1": { "model": "nokamod:zucchini_growth1" },
+        "age=2": { "model": "nokamod:zucchini_growth1" },
+        "age=3": { "model": "nokamod:zucchini_growth2" },
+        "age=4": { "model": "nokamod:zucchini_growth2" },
+        "age=5": { "model": "nokamod:zucchini_growth3" },
+        "age=6": { "model": "nokamod:zucchini_growth3" },
+        "age=7": { "model": "nokamod:zucchini_growth4" }
+    }
+}

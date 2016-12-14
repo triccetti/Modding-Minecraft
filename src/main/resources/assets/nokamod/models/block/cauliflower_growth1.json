@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nokamod:blocks/cauliflower_growth1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nokamod:blocks/squash_growth2"
+  }
+}

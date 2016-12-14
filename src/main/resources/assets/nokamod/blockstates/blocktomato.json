@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "nokamod:tomato_growth0" },
+        "age=1": { "model": "nokamod:tomato_growth1" },
+        "age=2": { "model": "nokamod:tomato_growth1" },
+        "age=3": { "model": "nokamod:tomato_growth2" },
+        "age=4": { "model": "nokamod:tomato_growth2" },
+        "age=5": { "model": "nokamod:tomato_growth3" },
+        "age=6": { "model": "nokamod:tomato_growth3" },
+        "age=7": { "model": "nokamod:tomato_growth4" }
+    }
+}

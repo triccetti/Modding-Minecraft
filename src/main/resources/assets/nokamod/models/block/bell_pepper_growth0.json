@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nokamod:blocks/bell_pepper_growth0"
+  }
+}

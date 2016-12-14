@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nokamod:blocks/broccolini_growth2"
+  }
+}

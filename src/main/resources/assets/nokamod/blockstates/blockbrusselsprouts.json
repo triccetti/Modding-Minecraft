@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "nokamod:brussel_sprouts_growth0" },
+        "age=1": { "model": "nokamod:brussel_sprouts_growth1" },
+        "age=2": { "model": "nokamod:brussel_sprouts_growth1" },
+        "age=3": { "model": "nokamod:brussel_sprouts_growth2" },
+        "age=4": { "model": "nokamod:brussel_sprouts_growth2" },
+        "age=5": { "model": "nokamod:brussel_sprouts_growth3" },
+        "age=6": { "model": "nokamod:brussel_sprouts_growth3" },
+        "age=7": { "model": "nokamod:brussel_sprouts_growth4" }
+    }
+}

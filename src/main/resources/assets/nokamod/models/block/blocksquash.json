@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "nokamod:blocks/squash_top",
+        "side": "nokamod:blocks/squash_side"
+    }
+}

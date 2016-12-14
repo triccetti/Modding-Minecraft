@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nokamod:blocks/brussel_sprouts_growth0"
+  }
+}
