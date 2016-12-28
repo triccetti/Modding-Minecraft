@@ -65,4 +65,4 @@ tile.cherry_log.name=Cherry Wood
 tile.cheese_block.name=Cheese Wheel
 tile.squash_block.name=Squash
 
-entity.nokamod.goat.name=Goat
+entity.Goat.name=Goat

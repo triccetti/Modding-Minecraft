@@ -9,12 +9,10 @@ public class ModDropHandler {
 
 	public static void register() {
 		forgeHooks();
-	}
-	
+	}	
 	
 	// Adds grass drops
 	public static void forgeHooks() {
 		MinecraftForge.addGrassSeed(new ItemStack(ModItems.arugula_seeds), 2);
 	}
-
 }

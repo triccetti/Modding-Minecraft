@@ -85,9 +85,8 @@ public class ModBlocks {
 	public static void init() {
 		
 		// logs
-		almond_log = new BlockAlmondLog(Refrence.NokaModBlocks.ALMOND_LOG);
+		almond_log = new ModBlockLog(Refrence.NokaModBlocks.ALMOND_LOG);
 		cherry_log = new ModBlockLog(Refrence.NokaModBlocks.CHERRY_LOG);
-		
 		
 		cheese_block = new BlockCheese(Material.CACTUS, MapColor.YELLOW, Refrence.NokaModBlocks.CHEESE_BLOCK);
 		squash_block = new  BlockSquash(Material.GOURD, MapColor.GREEN, Refrence.NokaModBlocks.SQUASH_BLOCK);
@@ -124,7 +123,9 @@ public class ModBlocks {
 	}
 		
 	public static void register() {
+		registerBlock(almond_log);
 		registerBlock(cherry_log);
+		
 		registerBlock(cheese_block);
 		registerBlock(artichoke_block);
 		registerBlock(arugula_block);
