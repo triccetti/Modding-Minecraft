@@ -1,8 +1,8 @@
 {
     "variants": {
-        "axis=y":  { "model": "cherry_log" },
-        "axis=z":   { "model": "cherry_log", "x": 90 },
-        "axis=x":   { "model": "cherry_log", "x": 90, "y": 90 },
-        "axis=none": { "model": "cherry_bark" }
+        "axis=y":  { "model": "nokamod:block/cherry_log" },
+        "axis=z":   { "model": "nokamod:block/cherry_log", "x": 90 },
+        "axis=x":   { "model": "nokamod:block/cherry_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "nokamod:block/cherry_bark" }
     }
 }

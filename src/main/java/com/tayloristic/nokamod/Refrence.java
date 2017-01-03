@@ -92,8 +92,8 @@ public class Refrence {
 	
 	// My enum types for blocks.
 	public static enum NokaModBlocks {
-		CHERRY_LOG("cherry_log", "BlockCherryLog"),
 		ALMOND_LOG("almond_log", "BlockAlmondLog"),
+		CHERRY_LOG("cherry_log", "BlockCherryLog"),
 		
 		CHEESE_BLOCK("cheese_block", "BlockCheese"), 
 		SQUASH_BLOCK("squash_block", "BlockSquash"),

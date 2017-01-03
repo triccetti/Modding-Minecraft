@@ -1,6 +1,7 @@
 package com.tayloristic.nokamod.init;
 
 import com.tayloristic.nokamod.Refrence;
+import com.tayloristic.nokamod.blocks.ModBlock;
 import com.tayloristic.nokamod.blocks.crops.ArtichokeCrop;
 import com.tayloristic.nokamod.blocks.crops.ArugulaCrop;
 import com.tayloristic.nokamod.blocks.crops.AsparagusCrop;
@@ -28,13 +29,10 @@ import com.tayloristic.nokamod.blocks.crops.TomatoCrop;
 import com.tayloristic.nokamod.blocks.crops.TurnipCrop;
 import com.tayloristic.nokamod.blocks.crops.YamCrop;
 import com.tayloristic.nokamod.blocks.crops.ZucchiniCrop;
-import com.tayloristic.nokamod.blocks.customBlocks.BlockAlmondLog;
 import com.tayloristic.nokamod.blocks.customBlocks.BlockCheese;
 import com.tayloristic.nokamod.blocks.customBlocks.BlockSquash;
-import com.tayloristic.nokamod.blocks.customBlocks.ModBlockLog;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -46,8 +44,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 	
 	//logs
-	public static BlockLog cherry_log;
-	public static BlockLog almond_log;
+	public static Block cherry_log;
+	public static Block almond_log;
 
 	// custom blocks
 	public static Block cheese_block;
@@ -85,8 +83,8 @@ public class ModBlocks {
 	public static void init() {
 		
 		// logs
-		almond_log = new ModBlockLog(Refrence.NokaModBlocks.ALMOND_LOG);
-		cherry_log = new ModBlockLog(Refrence.NokaModBlocks.CHERRY_LOG);
+		almond_log = new ModBlock(Material.WOOD, MapColor.WOOD, Refrence.NokaModBlocks.ALMOND_LOG);
+		cherry_log = new ModBlock(Material.WOOD, MapColor.WOOD, Refrence.NokaModBlocks.CHERRY_LOG);
 		
 		cheese_block = new BlockCheese(Material.CACTUS, MapColor.YELLOW, Refrence.NokaModBlocks.CHEESE_BLOCK);
 		squash_block = new  BlockSquash(Material.GOURD, MapColor.GREEN, Refrence.NokaModBlocks.SQUASH_BLOCK);
@@ -166,7 +164,9 @@ public class ModBlocks {
 	}
 	
 	public static void registerRenders() {
+		register(almond_log);
 		register(cherry_log);
+		
 		register(cheese_block);
 		register(asparagus_block);
 		register(zucchini_block);
