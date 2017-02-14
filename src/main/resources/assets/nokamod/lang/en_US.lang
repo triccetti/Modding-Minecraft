@@ -62,8 +62,8 @@ item.yam.name=Yam
 item.yam_seeds.name=Yam Seeds
 
 
-tile.almond_log.name=Almond Wood
-tile.cherry_log.name=Cherry Wood
+tile.nokamod:blockalmondlog.name=Almond Wood
+tile.nokamod:blockcherrylog.name=Cherry Wood
 
 tile.cheese_block.name=Cheese Wheel
 tile.squash_block.name=Squash
