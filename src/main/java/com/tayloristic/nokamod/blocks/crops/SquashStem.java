@@ -17,8 +17,8 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -28,7 +28,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class SquashStem extends BlockStem {
+public class SquashStem extends BlockStem implements IBlockColor {
     public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 7);
     public static final PropertyDirection FACING = BlockTorch.FACING;
     private final Block crop;
@@ -179,4 +179,9 @@ public class SquashStem extends BlockStem {
     {
         return new BlockStateContainer(this, new IProperty[] {AGE, FACING});
     }
+
+	@Override
+	public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
+		return 0;
+	}
 }

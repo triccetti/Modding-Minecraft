@@ -35,7 +35,7 @@ public class ModLogOld extends BlockLog {
 		this.registryName = registryName;
 		this.setRegistryName(registryName);
 		this.setUnlocalizedName(getRegistryName().toString());
-		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, ModBlockLog.EnumWoodType.OAK)
+		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, ModBlockLog.EnumWoodType.ALMOND)
 				.withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
 		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
@@ -53,15 +53,11 @@ public class ModLogOld extends BlockLog {
 
 				switch (PrimalBlockPlanks$enumtype)
 				{
-					case OAK:
+					case ALMOND:
 					default:
-						return ModBlockLog.EnumWoodType.SPRUCE.func_181070_c();
-					case SPRUCE:
-						return ModBlockLog.EnumWoodType.DARK_OAK.func_181070_c();
-					case BIRCH:
-						return MapColor.QUARTZ;
-					case JUNGLE:
-						return ModBlockLog.EnumWoodType.SPRUCE.func_181070_c();
+						return ModBlockLog.EnumWoodType.ALMOND.func_181070_c();
+					case CHERRY:
+						return ModBlockLog.EnumWoodType.CHERRY.func_181070_c();
 				}
 
 			case Y:
@@ -72,10 +68,8 @@ public class ModLogOld extends BlockLog {
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List<ItemStack> list)
 	{
-		list.add(new ItemStack(itemIn, 1, ModBlockLog.EnumWoodType.OAK.getMetadata()));
-		list.add(new ItemStack(itemIn, 1, ModBlockLog.EnumWoodType.SPRUCE.getMetadata()));
-		list.add(new ItemStack(itemIn, 1, ModBlockLog.EnumWoodType.BIRCH.getMetadata()));
-		list.add(new ItemStack(itemIn, 1, ModBlockLog.EnumWoodType.JUNGLE.getMetadata()));
+		list.add(new ItemStack(itemIn, 1, ModBlockLog.EnumWoodType.ALMOND.getMetadata()));
+		list.add(new ItemStack(itemIn, 1, ModBlockLog.EnumWoodType.CHERRY.getMetadata()));
 	}
 
 	public IBlockState getStateFromMeta(int meta)

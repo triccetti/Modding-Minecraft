@@ -6,13 +6,10 @@ import net.minecraft.util.IStringSerializable;
 public class ModBlockLog {
 
 	public static enum EnumWoodType implements IStringSerializable {
-		OAK		(0, "log_oak_stripped", MapColor.WOOD), 
-		SPRUCE	(1, "log_spruce_stripped", MapColor.OBSIDIAN), 
-		BIRCH		(2, "log_birch_stripped", MapColor.SAND), 
-		JUNGLE	(3, "log_jungle_stripped", MapColor.DIRT), 
-		ACACIA	(4, "log_acacia_stripped", MapColor.ADOBE), 
-		DARK_OAK	(5, "log_dark_oak_stripped", "log_dark_oak_stripped", MapColor.BROWN);
-
+		ALMOND		(0, "log_almond", MapColor.WOOD), 
+		CHERRY	(1, "log_cherry", MapColor.WOOD);
+		
+		
 		private static final ModBlockLog.EnumWoodType[]	META_LOOKUP	= new ModBlockLog.EnumWoodType[values().length];
 		private final int meta;
 		private final String registryName;
