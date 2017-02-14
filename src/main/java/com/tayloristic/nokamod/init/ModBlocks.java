@@ -1,7 +1,6 @@
 package com.tayloristic.nokamod.init;
 
 import com.tayloristic.nokamod.Refrence;
-import com.tayloristic.nokamod.blocks.ModBlock;
 import com.tayloristic.nokamod.blocks.crops.ArtichokeCrop;
 import com.tayloristic.nokamod.blocks.crops.ArugulaCrop;
 import com.tayloristic.nokamod.blocks.crops.AsparagusCrop;
@@ -31,8 +30,10 @@ import com.tayloristic.nokamod.blocks.crops.YamCrop;
 import com.tayloristic.nokamod.blocks.crops.ZucchiniCrop;
 import com.tayloristic.nokamod.blocks.customBlocks.BlockCheese;
 import com.tayloristic.nokamod.blocks.customBlocks.BlockSquash;
+import com.tayloristic.nokamod.blocks.customBlocks.ModOldLog;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -44,8 +45,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 	
 	//logs
-	public static Block cherry_log;
-	public static Block almond_log;
+	public static BlockLog cherry_log;
+	public static BlockLog almond_log;
 
 	// custom blocks
 	public static Block cheese_block;
@@ -83,8 +84,9 @@ public class ModBlocks {
 	public static void init() {
 		
 		// logs
-		almond_log = new ModBlock(Material.WOOD, MapColor.WOOD, Refrence.NokaModBlocks.ALMOND_LOG);
-		cherry_log = new ModBlock(Material.WOOD, MapColor.WOOD, Refrence.NokaModBlocks.CHERRY_LOG);
+		almond_log = new ModOldLog(Refrence.NokaModBlocks.ALMOND_LOG);
+		cherry_log = new ModOldLog(Refrence.NokaModBlocks.CHERRY_LOG);
+		
 		
 		cheese_block = new BlockCheese(Material.CACTUS, MapColor.YELLOW, Refrence.NokaModBlocks.CHEESE_BLOCK);
 		squash_block = new  BlockSquash(Material.GOURD, MapColor.GREEN, Refrence.NokaModBlocks.SQUASH_BLOCK);
@@ -117,7 +119,7 @@ public class ModBlocks {
 		yam_block = new  YamCrop(Refrence.NokaModBlocks.YAM_BLOCK);
 		zucchini_block = new  ZucchiniCrop(Refrence.NokaModBlocks.ZUCCHINI_BLOCK);
 		squash_stem = new SquashStem(Refrence.NokaModBlocks.SQUASH_STEM);
-
+		
 	}
 		
 	public static void register() {
@@ -152,7 +154,7 @@ public class ModBlocks {
 		registerBlock(tomato_block);
 		registerBlock(turnip_block);
 		registerBlock(yam_block);
-		registerBlock(zucchini_block);
+		registerBlock(zucchini_block); 
 		
 	}
 	
@@ -192,10 +194,10 @@ public class ModBlocks {
 		register(pea_block);
 		register(radish_block);
 		register(spinach_block);
-		register(squash_block);
 		register(tomato_block);
 		register(turnip_block);
-		register(squash_stem);
+		register(squash_block);
+		register(squash_stem); 
 	}
 	
 	private static void register(Block block) {

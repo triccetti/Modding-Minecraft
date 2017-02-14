@@ -1,8 +1,13 @@
 {
     "variants": {
-        "axis=y":  { "model": "nokamod:block/almond_log" },
-        "axis=z":   { "model": "nokamod:block/almond_log", "x": 90 },
-        "axis=x":   { "model": "nokamod:block/almond_log", "x": 90, "y": 90 },
-        "axis=none": { "model": "nokamod:block/almond_bark" }
+        "axis=y,variant=almond":    {   "model": "nokamod:block/almond_log" },
+        "axis=z,variant=almond":     { "model": "nokamod:block/almond_log_side" },
+        "axis=x,variant=almond":     { "model": "nokamod:block/almond_log_side", "y": 90 },
+        "axis=none,variant=almond":   { "model": "nokamod:block/almond_bark" },
+        "axis=y,variant=cherry":    {   "model": "nokamod:block/almond_log" },
+        "axis=z,variant=cherry":     { "model": "nokamod:block/almond_log_side" },
+        "axis=x,variant=cherry":     { "model": "nokamod:block/almond_log_side", "y": 90 },
+        "axis=none,variant=cherry":   { "model": "nokamod:block/almond_bark" }
+
     }
 }

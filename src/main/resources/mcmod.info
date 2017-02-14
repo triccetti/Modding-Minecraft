@@ -1,15 +1,15 @@
 [
-{
-  "modid": "nokamod",
-  "name": "Noka Mod",
-  "description": "The best farming mod ever!",
-  "version": "1.0",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["Tayloristic"],
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+    {
+      "modid": "nokamod",
+      "name": "Noka Mod",
+      "description": "The best farming mod ever!",
+      "version": "1.0",
+      "mcversion": "${mcversion}",
+      "url": "",
+      "updateUrl": "",
+      "authorList": ["Tayloristic"],
+      "logoFile": "",
+      "screenshots": [],
+      "dependencies": []
+    }
 ]
