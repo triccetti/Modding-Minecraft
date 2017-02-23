@@ -1,6 +1,0 @@
-{
-    "parent": "nokamod:block/cube_all",
-    "textures": {
-        "all": "nokamod:blocks/log_almond"
-    }
-}

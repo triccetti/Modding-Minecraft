@@ -83,7 +83,7 @@ public class EntityBuffalo extends EntityAnimal {
 	
 	@Override
 	public EntityBuffalo createChild(EntityAgeable ageable) {
-        return new EntityBuffalo(this.worldObj);
+        return new EntityBuffalo(this.world);
     }
 
 	@Override

@@ -8,19 +8,19 @@ public class ModAchievements {
 	
 	
 	public static void init() {
-		GATHERER = new Achievement("achievement.gatherer", "gatherer", 0,0 , ModItems.arugula_seeds, GATHERER ).initIndependentStat().setSpecial();
+	//	GATHERER = new Achievement("achievement.gatherer", "gatherer", 0,0 , ModItems.arugula_seeds, GATHERER ).initIndependentStat().setSpecial();
 				
 	
 	}
 	
 	
 	public static void registerAchievements() {
-		register(GATHERER);
+	//	register(GATHERER);
 		
 	}
 
 
 	private static void register(Achievement achieve) {
-		achieve.registerStat();
+	//	achieve.registerStat();
 	}
 }
