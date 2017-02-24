@@ -1,6 +1,8 @@
 package com.tayloristic.nokamod.init;
 
 import com.tayloristic.nokamod.Refrence;
+import com.tayloristic.nokamod.blocks.ModLeaves;
+import com.tayloristic.nokamod.blocks.ModLog;
 import com.tayloristic.nokamod.blocks.crops.ArtichokeCrop;
 import com.tayloristic.nokamod.blocks.crops.ArugulaCrop;
 import com.tayloristic.nokamod.blocks.crops.AsparagusCrop;
@@ -30,10 +32,8 @@ import com.tayloristic.nokamod.blocks.crops.YamCrop;
 import com.tayloristic.nokamod.blocks.crops.ZucchiniCrop;
 import com.tayloristic.nokamod.blocks.customBlocks.BlockCheese;
 import com.tayloristic.nokamod.blocks.customBlocks.BlockSquash;
-import com.tayloristic.nokamod.blocks.customBlocks.ModOldLog;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -45,9 +45,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 	
 	//logs
-	public static BlockLog cherry_log;
-	public static BlockLog almond_log;
+	public static Block almond_log;
+	public static Block cherry_log;
 
+	//leaves 
+	public static Block almond_leaves;
+	
 	// custom blocks
 	public static Block cheese_block;
 	public static Block squash_block;
@@ -79,14 +82,17 @@ public class ModBlocks {
 	public static Block turnip_block;
 	public static Block yam_block;
 	public static Block zucchini_block;
-	public static Block squash_stem;
+	public static Block squash_stem; 
 	
 	public static void init() {
 		
 		// logs
-		almond_log = new ModOldLog(Refrence.NokaModBlocks.ALMOND_LOG);
-		cherry_log = new ModOldLog(Refrence.NokaModBlocks.CHERRY_LOG);
+		almond_log = new ModLog(MapColor.SAND, Refrence.NokaModLogs.ALMOND_LOG);
+		cherry_log = new ModLog(MapColor.SAND, Refrence.NokaModLogs.CHERRY_LOG);
 		
+		// leaves
+		
+		//almond_leaves = new ModLeaves(Refrence.NokaModLeaves.ALMOND_LEAVES, ModBlocks.almond_log);
 		
 		cheese_block = new BlockCheese(Material.CACTUS, MapColor.YELLOW, Refrence.NokaModBlocks.CHEESE_BLOCK);
 		squash_block = new  BlockSquash(Material.GOURD, MapColor.GREEN, Refrence.NokaModBlocks.SQUASH_BLOCK);
@@ -126,6 +132,8 @@ public class ModBlocks {
 		registerBlock(almond_log);
 		registerBlock(cherry_log);
 		
+		//registerBlock(almond_leaves);
+		
 		registerBlock(cheese_block);
 		registerBlock(artichoke_block);
 		registerBlock(arugula_block);
@@ -154,10 +162,11 @@ public class ModBlocks {
 		registerBlock(tomato_block);
 		registerBlock(turnip_block);
 		registerBlock(yam_block);
-		registerBlock(zucchini_block); 
+		registerBlock(zucchini_block);  
 		
 	}
-	
+
+
 	private static void registerBlock(Block block){
 		GameRegistry.register(block);
 		ItemBlock item = new ItemBlock(block);
@@ -168,6 +177,8 @@ public class ModBlocks {
 	public static void registerRenders() {
 		register(almond_log);
 		register(cherry_log);
+		
+		//register(almond_leaves);
 		
 		register(cheese_block);
 		register(asparagus_block);
@@ -197,7 +208,7 @@ public class ModBlocks {
 		register(tomato_block);
 		register(turnip_block);
 		register(squash_block);
-		register(squash_stem); 
+		register(squash_stem);  
 	}
 	
 	private static void register(Block block) {

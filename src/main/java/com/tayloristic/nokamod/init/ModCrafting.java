@@ -6,7 +6,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModCrafting {
 	
 	public static void register() {
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.cheese_block), new Object[]{"AAA",
+	/*	GameRegistry.addRecipe(new ItemStack(ModBlocks.cheese_block), new Object[]{"AAA",
 																		    	  "AAA",
 																		       	  "AAA", 'A', ModItems.cheese});
 		
@@ -14,7 +14,7 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bell_pepper_seeds, 1), ModItems.green_bell_pepper);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bell_pepper_seeds, 1), ModItems.red_bell_pepper);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bell_pepper_seeds, 1), ModItems.yellow_bell_pepper);
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bell_pepper_seeds, 1), ModItems.orange_bell_pepper);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.bell_pepper_seeds, 1), ModItems.orange_bell_pepper);*/
 
 	}
 }

@@ -66,7 +66,7 @@ public class ModItems {
 	public static Item spinach_seeds;	
 	public static Item sweet_potato;
 	public static Item tomato;
-	public static Item tomato_seeds;
+    public static Item tomato_seeds;
 	public static Item turnip;
 	public static Item turnip_seeds;
 	public static Item yam;
@@ -119,7 +119,7 @@ public class ModItems {
 		orange_bell_pepper = new ModItemFood(3, 0.3f, false, food, NokaModItems.ORANGE_BELL_PEPPER);
 
 		// Seeds
-		artichoke_seeds = new ModItemSeeds(ModBlocks.artichoke_block, Blocks.FARMLAND, NokaModItems.ARTICHOKE_SEEDS);
+	    artichoke_seeds = new ModItemSeeds(ModBlocks.artichoke_block, Blocks.FARMLAND, NokaModItems.ARTICHOKE_SEEDS);
 		arugula_seeds = new ModItemSeeds(ModBlocks.arugula_block, Blocks.FARMLAND, NokaModItems.ARUGULA_SEEDS);
 		asparagus_seeds = new ModItemSeeds(ModBlocks.asparagus_block, Blocks.FARMLAND, NokaModItems.ASPARAGUS_SEEDS);		
 		bell_pepper_seeds =  new ModItemSeeds(ModBlocks.bell_pepper_block, Blocks.FARMLAND, NokaModItems.BELL_PEPPER_SEEDS);
@@ -248,7 +248,7 @@ public class ModItems {
 		registerRender(squash);
 		registerRender(tomato);
 		registerRender(turnip);
-		registerRender(yam);
+	//	registerRender(yam);
 		registerRender(yellow_bell_pepper);
 		registerRender(zucchini);
 		
@@ -278,7 +278,7 @@ public class ModItems {
 		registerRender(squash_seeds);
 		registerRender(tomato_seeds);
 		registerRender(turnip_seeds);
-		registerRender(zucchini_seeds);
+		registerRender(zucchini_seeds); 
 	}
 	
 	private static void registerRender(Item item) {

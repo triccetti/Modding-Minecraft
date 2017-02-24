@@ -83,7 +83,7 @@ public class EntityGoat extends EntityAnimal {
 	
 	@Override
 	public EntityGoat createChild(EntityAgeable ageable) {
-        return new EntityGoat(this.worldObj);
+        return new EntityGoat(this.world);
     }
 
 	@Override

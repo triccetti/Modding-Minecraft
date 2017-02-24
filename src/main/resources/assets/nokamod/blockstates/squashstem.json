@@ -1,5 +1,7 @@
+
 {
     "variants": {
+<<<<<<< HEAD
         "age=0,facing=up": { "model": "nokamod:squash_stem_growth0" },
         "age=1,facing=up": { "model": "nokamod:squash_stem_growth1" },
         "age=2,facing=up": { "model": "nokamod:squash_stem_growth1" },
@@ -12,5 +14,15 @@
         "facing=east": { "model": "nokamod:squash_stem_fruit", "y": 180 },
         "facing=north": { "model": "nokamod:squash_stem_fruit", "y": 90 },
         "facing=south": { "model": "nokamod:squash_stem_fruit", "y": 270 }
+=======
+        "age=0": { "model": "nokamod:squash_growth0" },
+        "age=1": { "model": "nokamod:squash_growth1" },
+        "age=2": { "model": "nokamod:squash_growth1" },
+        "age=3": { "model": "nokamod:squash_growth2" },
+        "age=4": { "model": "nokamod:squash_growth2" },
+        "age=5": { "model": "nokamod:squash_growth3" },
+        "age=6": { "model": "nokamod:squash_growth3" },
+        "age=7": { "model": "nokamod:squash_growth4" }
+>>>>>>> 0ed3e070767d8f46a953da7448701cd56b7e90bb
     }
 }
